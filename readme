@@ -1,0 +1,26 @@
+# Image Optimization Script
+
+This Python script optimizes images in a directory by resizing them (optional) and reducing their file size to a specified limit.
+
+## Prerequisites
+
+-   Python 3.x
+-   Pillow (PIL) library: `pip install -r requirements.txt`
+
+## Setup
+
+1.  Save the script to a file, for example, `image_optimizer.py`.
+2.  Create a `requirements.txt` file containing `pillow===11`.
+
+## Usage
+
+1.  Run the script from the command line: `python image_optimizer.py`
+2.  The script will prompt you for the following inputs:
+
+    -   **Images Directory Source Path:** The path to the directory containing the images you want to optimize.
+    -   **Images Directory Output Path:** The path to the directory where the optimized images will be saved.
+    -   **Desired Output File Format:** The desired file format for the optimized images (e.g., jpg, png).
+    -   **Desired Width for all Images (Optional):**  Enter a width to resize all images to that width. Leave blank to keep original width.
+    -   **Desired Size in KB for all Images (Optional, default 100kb):** The maximum file size in KB for the optimized images. Leave blank to default to 100kb.
+
+The script will then process each image in the input directory, resize it if a desired width is provided, and reduce its quality until it meets the specified size limit. The optimized images will be saved in the output directory with the specified file format.

@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller distribution
+/dist
+/build
+
+# Unit test / coverage reports
+/htmlcov
+/.tox
+/.coverage
+/.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+/*.mo
+
+# OS generated files
+.DS_Store
+Thumbs.db
